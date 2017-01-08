@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.startapplabs.ionWordpress" version="1.5.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>ionWordpress</name>
+    <name>Antigua Chronicle</name>
     <description>
-    An Ionic and Cordova project based on WordPress.
+    Antigua Chronicle
   </description>
-    <author email="contact@ionicthemes.com" href="http://ionicthemes.com">
-    StartApp Labs
+    <author email="jupiter@pivotmobileapp.com" href="http://antiguchronicle.net">
+    Sherwin Jupiter
   </author>
     <content src="index.html" />
     <access origin="*" />
@@ -21,6 +21,34 @@
     <feature name="StatusBar">
         <param name="ios-package" onload="true" value="CDVStatusBar" />
     </feature>
+    
+    <preference name="android-build-tool" value="gradle" />	
+		
+	<gap:plugin name="cordova-plugin-whitelist" source="npm" />
+    <gap:plugin name="phonegap-plugin-push" source="npm" spec="1.5.3" />
+    <gap:plugin name="com.paypal.cordova.mobilesdk" source="npm"  />            	
+    <gap:plugin name="cordova-plugin-device" source="npm" />		
+	<gap:plugin name="cordova-plugin-inappbrowser" source="npm" />		
+	<gap:plugin name="cordova-plugin-splashscreen" source="npm" />	
+	<gap:plugin name="cordova-plugin-geolocation" source="npm" />
+	<gap:plugin name="cordova-plugin-network-information" source="npm" />
+		
+	<gap:plugin name="cordova-plugin-request-location-accuracy" source="npm" />	
+	<gap:plugin name="cordova-plugin-x-toast" source="npm" />	
+
+	<gap:plugin name="cordova-plugin-fastrde-checkgps" source="npm" />
+	<gap:plugin spec="https://github.com/rodrigo-martinezd/cordova-dialog-gps.git" source="git" />
+	
+	<gap:plugin spec="https://github.com/razorpay/razorpay-cordova.git" source="git" />
+	<gap:plugin name="cordova-plugin-media" source="npm" />	
+	<gap:plugin name="cordova.plugins.diagnostic" source="npm" />	
+	
+	<gap:plugin name="cordova-plugin-googlemaps"  source="npm" >
+	   <param name="API_KEY_FOR_ANDROID" value="AIzaSyB23iFb59u5J1gfXe04OtkepXcq9nZQVRs" />
+	   <param name="API_KEY_FOR_IOS" value="AIzaSyB23iFb59u5J1gfXe04OtkepXcq9nZQVRs" />
+	</gap:plugin>
+    
+    
     <platform name="android">
         <icon density="ldpi" src="resources/android/icon/drawable-ldpi-icon.png" />
         <icon density="mdpi" src="resources/android/icon/drawable-mdpi-icon.png" />
