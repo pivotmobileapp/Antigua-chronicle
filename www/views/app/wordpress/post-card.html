@@ -1,9 +1,10 @@
 <div class="card-header">
   <h1 ng-bind-html="post.title | rawHtml"></h1>
   <h2>Posted <span am-time-ago="post.date"></span> by <span class="author" ng-bind-html="post.author.name | rawHtml"></span></h2>
+  <img ng-src="{{post.attachments[0].url}}" />
 </div>
 <div class="card-content-outer" post-content>
-  <img ng-src="{{post.attachments[0].url}}" />
+  
   <div class="card-content" dynamic-anchor-fix ng-bind-html="post.content | rawHtml"></div>
   
 </div>
